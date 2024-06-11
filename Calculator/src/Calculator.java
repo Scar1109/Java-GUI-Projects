@@ -38,6 +38,7 @@ public class Calculator extends JFrame {
         setLocationRelativeTo(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
+        //exit button implementation
         exitBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -73,7 +74,7 @@ public class Calculator extends JFrame {
         multiplyBtn.addActionListener(new OperatorListener('*'));
         powerBtn.addActionListener(new OperatorListener('^'));
 
-        // Special buttons
+        // square button
         squarBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
