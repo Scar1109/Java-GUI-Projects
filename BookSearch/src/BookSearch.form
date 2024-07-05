@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="BookSearch">
+  <grid id="27dc6" binding="bookSearch" layout-manager="GridLayoutManager" row-count="15" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="658" height="434"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="de988" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="JetBrains Mono" size="18" style="1"/>
+          <foreground color="-10128730"/>
+          <text value="Childen's Classics"/>
+        </properties>
+      </component>
+      <vspacer id="1ac9c">
+        <constraints>
+          <grid row="14" column="2" row-span="1" col-span="3" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="30"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <vspacer id="3b1dd">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="3" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="20"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <hspacer id="32586">
+        <constraints>
+          <grid row="1" column="6" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="20" height="-1"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <hspacer id="bff12">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="20" height="-1"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <component id="c5bfc" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="The program will find the title of a book according to the library referance number. "/>
+        </properties>
+      </component>
+      <component id="9e93b" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="The Program will use Binary search and Linear search"/>
+        </properties>
+      </component>
+      <component id="5624a" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="JetBrains Mono" size="14" style="1"/>
+          <text value="Enter the reference no :"/>
+        </properties>
+      </component>
+      <vspacer id="24c04">
+        <constraints>
+          <grid row="4" column="3" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="20"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <component id="bce9e" class="javax.swing.JTextField" binding="reference_input">
+        <constraints>
+          <grid row="5" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <hspacer id="a8e20">
+        <constraints>
+          <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="30" height="-1"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <hspacer id="d34">
+        <constraints>
+          <grid row="5" column="5" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="30" height="-1"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <component id="9d5d" class="javax.swing.JButton" binding="findBookButton" default-binding="true">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Find Book"/>
+        </properties>
+      </component>
+      <vspacer id="33152">
+        <constraints>
+          <grid row="6" column="4" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="10"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <component id="bf3df" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="9" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Linear Search :"/>
+        </properties>
+      </component>
+      <component id="7f9a8" class="javax.swing.JTextField" binding="linear_output">
+        <constraints>
+          <grid row="9" column="3" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="3087d" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="11" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Binary Search:"/>
+        </properties>
+      </component>
+      <component id="d18a" class="javax.swing.JTextField" binding="binary_output">
+        <constraints>
+          <grid row="11" column="3" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <vspacer id="93dbd">
+        <constraints>
+          <grid row="8" column="4" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="30"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <vspacer id="54e81">
+        <constraints>
+          <grid row="10" column="4" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="20"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <hspacer id="142ed">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="20" height="-1"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <component id="3f31d" class="javax.swing.JButton" binding="exitButton" default-binding="true">
+        <constraints>
+          <grid row="13" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Exit"/>
+        </properties>
+      </component>
+      <vspacer id="2c2bb">
+        <constraints>
+          <grid row="12" column="5" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="20"/>
+          </grid>
+        </constraints>
+      </vspacer>
+    </children>
+  </grid>
+</form>
