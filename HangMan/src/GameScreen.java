@@ -23,7 +23,7 @@ public class GameScreen extends JFrame {
 
         ImageIcon logoImgSrc = resizeImageIcon(new ImageIcon("res/hangman-logo.png"), 120, 85);
         ImageIcon hangImage = resizeImageIcon(new ImageIcon("res/hang.png"), 55, 95);
-        ImageIcon manImage = resizeImageIcon(new ImageIcon("res/manImg.png"), 75, 85);
+        ImageIcon manImage = resizeImageIcon(new ImageIcon("res/manImg.png"), 70, 85);
 
         hangmanGame = new HangmanGame();
 

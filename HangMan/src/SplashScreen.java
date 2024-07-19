@@ -20,15 +20,15 @@ public class SplashScreen extends JFrame {
         // Create the custom panel with the background image
         splashScreen = new BackgroundPanel(backgroundImage);
         splashScreen.setLayout(null); // Set layout to null for absolute positioning
-        splashScreen.setPreferredSize(new Dimension(565, 335)); // Set the preferred size
+        splashScreen.setPreferredSize(new Dimension(565, 400)); // Set the preferred size
 
         // Initialize components
         playBtn = new JLabel();
         logoImg = new JLabel();
 
         // Add components to splashScreen with absolute positioning
-        logoImg.setBounds(200, 30, 240, 150); // x, y, width, height
-        playBtn.setBounds(240, 165, 110, 110); // x, y, width, height
+        logoImg.setBounds(200, 40, 240, 150); // x, y, width, height
+        playBtn.setBounds(240, 175, 110, 110); // x, y, width, height
 
         splashScreen.add(logoImg);
         splashScreen.add(playBtn);
