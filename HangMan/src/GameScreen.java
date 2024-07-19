@@ -12,6 +12,8 @@ public class GameScreen extends JFrame {
     private JPanel keyboardPanel;
     private HangmanGame hangmanGame;
     private JLabel logoLabel;
+    private JLabel hangImg;
+    private JLabel manImg;
 
     public GameScreen() {
         setTitle("Hangman Game");
@@ -20,10 +22,14 @@ public class GameScreen extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
         ImageIcon logoImgSrc = resizeImageIcon(new ImageIcon("res/hangman-logo.png"), 120, 85);
+        ImageIcon hangImage = resizeImageIcon(new ImageIcon("res/hang.png"), 55, 95);
+        ImageIcon manImage = resizeImageIcon(new ImageIcon("res/manImg.png"), 75, 85);
 
         hangmanGame = new HangmanGame();
 
         logoLabel.setIcon(logoImgSrc);
+        hangImg.setIcon(hangImage);
+        manImg.setIcon(manImage);
 
         updateWordLabel();
         updateLivesLabel();
