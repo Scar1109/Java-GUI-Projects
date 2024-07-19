@@ -7,13 +7,12 @@ public class HangmanGame {
 
     private String wordToGuess;
     private StringBuilder maskedWord;
-    private int score;
     private int incorrectGuesses;
+    private static final int MAX_INCORRECT_GUESSES = 6;
 
     public HangmanGame() {
-        wordToGuess = selectRandomWord("res/words.txt");
-        maskedWord = new StringBuilder("_".repeat(wordToGuess.length()));
-        score = 0;
+        wordToGuess = selectRandomWord("words.txt").toLowerCase();
+        maskedWord = new StringBuilder("*".repeat(wordToGuess.length()));
         incorrectGuesses = 0;
     }
 
@@ -35,6 +34,7 @@ public class HangmanGame {
     }
 
     public void makeGuess(char guess) {
+        guess = Character.toLowerCase(guess); // Convert guess to lowercase
         boolean correct = false;
         for (int i = 0; i < wordToGuess.length(); i++) {
             if (wordToGuess.charAt(i) == guess) {
@@ -45,18 +45,21 @@ public class HangmanGame {
         if (!correct) {
             incorrectGuesses++;
         }
-        score++;
     }
 
     public String getMaskedWord() {
         return maskedWord.toString();
     }
 
-    public boolean getScore() {
-        return (score==6);
+    public int getRemainingLives() {
+        return MAX_INCORRECT_GUESSES - incorrectGuesses;
     }
 
     public boolean isGameOver() {
-        return incorrectGuesses >= 6 || maskedWord.toString().equals(wordToGuess);
+        return incorrectGuesses >= MAX_INCORRECT_GUESSES || maskedWord.toString().equals(wordToGuess);
+    }
+
+    public boolean isWordGuessed() {
+        return maskedWord.toString().equals(wordToGuess);
     }
 }
