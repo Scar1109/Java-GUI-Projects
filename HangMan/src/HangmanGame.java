@@ -11,7 +11,7 @@ public class HangmanGame {
     private static final int MAX_INCORRECT_GUESSES = 6;
 
     public HangmanGame() {
-        wordToGuess = selectRandomWord("words.txt").toLowerCase();
+        wordToGuess = selectRandomWord("words.txt").toUpperCase();
         maskedWord = new StringBuilder("*".repeat(wordToGuess.length()));
         incorrectGuesses = 0;
     }
@@ -34,7 +34,7 @@ public class HangmanGame {
     }
 
     public void makeGuess(char guess) {
-        guess = Character.toLowerCase(guess); // Convert guess to lowercase
+        guess = Character.toUpperCase(guess);
         boolean correct = false;
         for (int i = 0; i < wordToGuess.length(); i++) {
             if (wordToGuess.charAt(i) == guess) {
