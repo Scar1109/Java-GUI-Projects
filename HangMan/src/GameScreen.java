@@ -62,7 +62,7 @@ public class GameScreen extends JFrame {
         for (char letter = 'A'; letter <= 'Z'; letter++) {
             JButton letterButton = new JButton(String.valueOf(letter));
             letterButton.setFont(new Font("SansSerif", Font.BOLD, 18));
-            letterButton.setBackground(Color.LIGHT_GRAY);
+            letterButton.setBackground(Color.WHITE);
             letterButton.setForeground(Color.BLACK);
             letterButton.addActionListener(new ActionListener() {
                 @Override
@@ -71,7 +71,7 @@ public class GameScreen extends JFrame {
                     String letter = source.getText();
                     makeGuess(letter.toLowerCase()); // Convert guess to lowercase
                     source.setEnabled(false); // Disable button after it's used
-                    source.setBackground(Color.GRAY);
+                    source.setBackground(Color.lightGray);
                 }
             });
             keyboardPanel.add(letterButton);
