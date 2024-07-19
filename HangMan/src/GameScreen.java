@@ -19,44 +19,11 @@ public class GameScreen extends JFrame {
         setLocationRelativeTo(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
-        ImageIcon logoImgSrc = resizeImageIcon(new ImageIcon("res/hangman-logo.png"), 240, 150);
-
-        // Ensure the gameScreen panel uses BorderLayout
-        gameScreen.setLayout(new BorderLayout());
+        ImageIcon logoImgSrc = resizeImageIcon(new ImageIcon("res/hangman-logo.png"), 120, 85);
 
         hangmanGame = new HangmanGame();
 
-        // Initialize UI components with styles
-        wordLabel = new JLabel();
-        wordLabel.setFont(new Font("SansSerif", Font.BOLD, 24));
-        wordLabel.setHorizontalAlignment(SwingConstants.CENTER);
-
-        livesLabel = new JLabel();
-        livesLabel.setFont(new Font("SansSerif", Font.BOLD, 18));
-        livesLabel.setHorizontalAlignment(SwingConstants.CENTER);
-
-        logoLabel = new JLabel(); // Adjust the path if necessary
         logoLabel.setIcon(logoImgSrc);
-        logoLabel.setHorizontalAlignment(SwingConstants.CENTER);
-
-        JPanel logoPanel = new JPanel();
-        logoPanel.setLayout(new GridLayout(1, 1, 10, 10));
-        logoPanel.setBorder(new EmptyBorder(10, 10, 10, 10));
-
-        // Create panels for word display and input
-        JPanel topPanel = new JPanel();
-        topPanel.setLayout(new GridLayout(4, 1, 10, 10));
-        topPanel.setBorder(new EmptyBorder(10, 10, 10, 10));
-        topPanel.add(logoLabel);
-        topPanel.add(wordLabel);
-        topPanel.add(livesLabel);
-
-        JPanel inputPanel = new JPanel();
-        inputPanel.setLayout(new FlowLayout());
-
-        topPanel.add(inputPanel);
-
-        gameScreen.add(topPanel, BorderLayout.NORTH);
 
         updateWordLabel();
         updateLivesLabel();
@@ -89,7 +56,6 @@ public class GameScreen extends JFrame {
     }
 
     private void createKeyboard() {
-        keyboardPanel = new JPanel();
         keyboardPanel.setLayout(new GridLayout(3, 9, 5, 5));
         keyboardPanel.setBorder(new EmptyBorder(10, 10, 10, 10));
 
@@ -110,8 +76,6 @@ public class GameScreen extends JFrame {
             });
             keyboardPanel.add(letterButton);
         }
-
-        gameScreen.add(keyboardPanel, BorderLayout.SOUTH); // Add keyboard panel to the game screen
     }
 
     //Image resize helper method
