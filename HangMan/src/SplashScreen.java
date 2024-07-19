@@ -11,7 +11,7 @@ public class SplashScreen extends JFrame {
 
     public SplashScreen() {
 
-        setTitle("Splash Screen");
+        setTitle("Welcome !");
 
         // Load the background image
         ImageIcon backgroundImageIcon = new ImageIcon("res/background-image.png");

@@ -54,8 +54,11 @@ public class GameScreen extends JFrame {
             updateWordLabel();
             updateLivesLabel();
             if (hangmanGame.isGameOver()) {
-                String message = hangmanGame.isWordGuessed() ? "Congratulations! You guessed the word!" : "Game Over! The word was: " + hangmanGame.getMaskedWord();
-                JOptionPane.showMessageDialog(this, message);
+                if (hangmanGame.isWordGuessed()) {
+                    new GameWonScreen(); // Navigate to GameWonScreen
+                } else {
+                    new GameOverScreen(hangmanGame.getMaskedWord()); // Navigate to GameOverScreen
+                }
                 dispose(); // Close game screen
             }
         }
