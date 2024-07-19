@@ -27,7 +27,7 @@ public class SplashScreen extends JFrame {
         logoImg = new JLabel();
 
         // Add components to splashScreen with absolute positioning
-        logoImg.setBounds(2splash, 30, 240, 150); // x, y, width, height
+        logoImg.setBounds(200, 30, 240, 150); // x, y, width, height
         playBtn.setBounds(240, 165, 110, 110); // x, y, width, height
 
         splashScreen.add(logoImg);
